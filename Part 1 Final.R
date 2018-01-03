@@ -1,6 +1,4 @@
-
-
-dataset=read.csv('Data.csv')
+dataset = read.csv('Data.csv')
 View(dataset)
 
 #Taking care of missing data
@@ -35,5 +33,3 @@ test_set = subset(dataset, split == FALSE)
 #Feature Scaling
 training_set[, 2:3] = scale(training_set[, 2:3])
 test_set[, 2:3] = scale(test_set[, 2:3])
-
-# Command shift c to comment out multiple lines
