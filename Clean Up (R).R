@@ -22,7 +22,7 @@ dataset$Purchased = factor(dataset$Purchased,
 
 #install.packages('caTools')
 library(caTools)
-set.seed(123) #seeding so that results will be same as tutorial
+set.seed(123) 
 
 split = sample.split(dataset$Purchased, SplitRatio = 0.8)
 #True if obersvation chosen to go to test set
